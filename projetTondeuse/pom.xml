@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.xebia.tondeuse</groupId>
+	<artifactId>projetTondeuse</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Projet Xebia Tondeuse</name>
+
+
+	<developers>
+		<developer>
+			<name>Alexandre P</name>
+			<id>apo</id>
+			<email>a.poichet@gmail.com</email>
+		</developer>
+	</developers>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<build.timestamp>${maven.build.timestamp}</build.timestamp>
+
+		<js.timestamp>${maven.build.timestamp}</js.timestamp>
+		<js.name>${project.artifactId}-${project.version}-${js.timestamp}</js.name>
+
+		<java.version>1.8</java.version>
+		<easymock.version>3.2</easymock.version>
+		<unitils.version>3.3</unitils.version>
+		<junit.version>4.10</junit.version>
+		<powermock.version>1.6.1</powermock.version>
+
+	</properties>
+
+<dependencies>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.4</version>
+	</dependency>
+</dependencies>
+
+
+</project>
